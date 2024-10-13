@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JarnT0 Store </title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            flex: 1 0 21%;
+            margin: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f3f4;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .app-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .app-icon {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .app-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .app-category {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .app-rating {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #5f6368;
+        }
+
+        nav a.active {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
+        }
+
+        .device-selector {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+
+        .device-selector button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .device-selector button.active {
+            background-color: #1a73e8;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #202124;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        .game-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e8eaed;
+        }
+
+        .game-info {
+            padding: 10px;
+        }
+
+        .game-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .game-category {
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        .game-rating {
+            color: #5f6368;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="game.html"><img src="https://img5.pic.in.th/file/secure-sv1/Screenshot_2024-10-12_212740-removebg-preview.png"
+            alt="Google Play logo" class="logo"></a>
+        <nav>
+            <a href="game.html">Games</a>
+            <a href="app.html">Apps</a>
+            <a href="#" class="active">Movies</a>
+            <a href="kid.html">Kids</a>
+        </nav>
+    </header>
+    <div class="device-selector">
+        <button class="active">Mobile</button>
+        <button>Watch</button>
+        <button>Tablet</button>
+        <button>TV</button>
+        <button>Chromebook</button>
+        <button>Window</button>
+    </div>
+    <main>
+        <h1>New arrivals ready to buy or rent</h1>
+        <p class="subtitle">Most Popular on Google TV :</p>
+
+
+        <div class="app-grid">
+            
+            <div class="app-card">
+               <a href="https://play.google.com/store/movies/details/Summer_Camp?id=NHVttsJ6oq4.P"> <img src="https://play-lh.googleusercontent.com/rHds2yvwtL5nMjNy_DTSS9ApsYRjXfNqYdD76vhm6nffliKfLPu5i7p8rwGT983JJV8yoDjRcvnQKWYYHRS6=s256-rw" alt="Free Fire" class="app-icon">
+               </a>  <div class="app-name">Summer Camp</div>
+            
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div>
+            <div class="app-card">
+              <a href="https://play.google.com/store/movies/details/Drive_Away_Dolls?id=w4vBQf0sUFk.P"> <img src="https://play-lh.googleusercontent.com/PBCd9ypempuCvOAjgmBhbSsJa5VVE2IqCQTd5Eqo0H7VH-uparXc9nk74mB9VjVqiuNJQ0avtLZa9F24LShE=s256-rw" alt="Free Fire" class="app-icon">
+            </a> <div class="app-name">Drive-Away Dolls</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/movies/details/Which_Brings_Me_to_You?id=g7T9ES3X1hs.P"><img src="https://play-lh.googleusercontent.com/VsKkX0qZykjJWjzhK5j2OHKdCKh-3ozdGPaJ0JXSuitD180vxRP_4fe0i8o4ZD6Ou_OThdsX7QtKHwog6xpR=w240-h480-rw" alt="Free Fire" class="app-icon">
+                </a>  <div class="app-name">Which Brings Me to You</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+               <a href="https://play.google.com/store/movies/details/Kill_Em_All_2?id=sX2_dHaEO7g.P"> <img src="https://play-lh.googleusercontent.com/ITi-XlzdiCdksxQRbRBBf2IXecCqObFtG1eYAP7sZZ0P42sydoh4PdtOjB48ujpOCSg_K0TpGDwsuw0YM--r=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a> <div class="app-name">Kill 'Em All 2</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+                <a href="https://play.google.com/store/movies/details/Breaking_Olympia_The_Phil_Heath_Story?id=cA1EUz-evPA.P"><img src="https://play-lh.googleusercontent.com/SbAzZbcPzSY0jP4LPpIgy90cCs8qVCapJo0yQ1zzaqkeJ71dKnBtTyABGvo6I_SGIP6dOQsOWWtADKi0Gvu0=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a> <div class="app-name">Breaking Olympia</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+                <a href="https://play.google.com/store/movies/details/%E0%B8%97%E0%B8%A7_%E0%B8%AA%E0%B8%A7_%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_%E0%B8%AA_Twisters?id=kbIhHXAq4Dk.P"><img src="https://play-lh.googleusercontent.com/TAvB1DCofw2jltmyDfNqXcikhqZAMnXWlEopqk7gFPVx0tvBCaarR0TwwUjPM0sjsqY8uWbjbRL7TJW2C29Z=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>  <div class="app-name">Twisters</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+               <a href="https://play.google.com/store/movies/details/Undercover_Brother_2?id=Ehtm0REOCb4"> <img src="https://play-lh.googleusercontent.com/_5SW0d0n5Oxw8uXi0CRvL2pUnFxBbl1SoIPl84zGx2DxmLdRHl1O4Yf-XUZ70dzYn1E=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>  <div class="app-name">Undercover Brother 2</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/movies/details/Death_At_A_Funeral_2010?id=q5hPQsg8XJk"><img src="https://play-lh.googleusercontent.com/dj4Rg4juYsRVrmNMf39IpumKU-EXfqt_slMxk7fNK0np46OnzVi3hBaoxG4NgVPw3XOT=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>   <div class="app-name">Death At A Funeral</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+                <a href="https://play.google.com/store/movies/details/Skyscraper?id=hAoOiReqheY.P"><img src="https://play-lh.googleusercontent.com/QAhfnAmtQN3RFa37DezqtM5MWyfRP0PqmDplvaX06bIdaLJNeIVUFiHVsgwcRR0i59RU-hnPPuLd1-ff15Q=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>  <div class="app-name">Skyscraper</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+               <a href="https://play.google.com/store/movies/details/The_Intern?id=V0m8WTZrR2w"> <img src="https://play-lh.googleusercontent.com/I-11FO2kJK5kd4E0QMwCmTts0q9Ix0P40H8EQcbcN9ERoCUuovuSDASlQ1y3zCJ_MTqc=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>  <div class="app-name">The Intern</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+               <a href="https://play.google.com/store/movies/details/World_Trade_Center?id=g3wFHZmc1F4"> <img src="https://play-lh.googleusercontent.com/POn5i2EUqsFp8u43C0ABAKPVlW1gXBptl8t9zEvFDCXVRi36tlmOzdR_ftM4NonsMQ-3JA=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>   <div class="app-name">World Trade Center</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div><div class="app-card">
+                <a href="https://play.google.com/store/movies/details/Dolphin_Tale_2?id=_htgpaFaUXk"><img src="https://play-lh.googleusercontent.com/VOMA_Cd3Qy5BNF1n1tlUqqj7ATuMN-sWg1w_PL0bDK38YxKq5MLmnt5mzP6HHWdfBAu2=w240-h480-rw" alt="Free Fire" class="app-icon">
+            </a>   <div class="app-name">Dolphin Tale 2</div>
+                <div class="app-rating"><p style="text-align: right;"> LAK 100.000</p></div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

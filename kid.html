@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JarnT0 Store </title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            flex: 1 0 21%;
+            margin: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f3f4;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .app-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .app-icon {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .app-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .app-category {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .app-rating {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #5f6368;
+        }
+
+        nav a.active {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
+        }
+
+        .device-selector {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+
+        .device-selector button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .device-selector button.active {
+            background-color: #1a73e8;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #202124;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        .game-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e8eaed;
+        }
+
+        .game-info {
+            padding: 10px;
+        }
+
+        .game-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .game-category {
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        .game-rating {
+            color: #5f6368;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="game.html"><img
+                src="https://img5.pic.in.th/file/secure-sv1/Screenshot_2024-10-12_212740-removebg-preview.png"
+                alt="Google Play logo" class="logo"></a>
+        <nav>
+            <a href="game.html">Games</a>
+            <a href="app.html">Apps</a>
+            <a href="movie.html">Movies</a>
+            <a href="#" class="active">Kids</a>
+        </nav>
+    </header>
+    <div class="device-selector">
+        <button class="active">Mobile</button>
+        <button>Watch</button>
+        <button>Tablet</button>
+        <button>TV</button>
+        <button>Chromebook</button>
+        <button>Window</button>
+    </div>
+    <main>
+        <h1>New and updated app</h1>
+        <p class="subtitle">Recommended for you :</p>
+
+
+        <div class="app-grid">
+
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.storytoys.thomasandfriends.google"> <img
+                        src="https://play-lh.googleusercontent.com/Ve00lcbqt1F8V7sZT0T2tsHct9KyWlKUG9hvUEFUi0GI-8ZVzVwgSP5liQ27mM09-g=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">Thomas & Friends™: Let's Roll</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.storytoys.disney.pixar.coloring.princess.googleplay">
+                    <img src="https://play-lh.googleusercontent.com/PJbLpZzvGhc3X-34nY3DL9m7N8LXp90_M3uQ_9UuN1NCTAd2dP5oWRn2NaNcC8SuFw=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">Disney Coloring World</div><br>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.sinyee.babybus.greenhouse"> <img
+                        src="https://play-lh.googleusercontent.com/8KQU9ZWW6qSnLk0vBsl_kdNbrqj_2chzN7rg_Pl0l5calKVr9WC7aHi1HUrWsvf2ig=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">DIY ดอกไม้ของแพนด้าน้อย</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=mytown.home"> <img
+                        src="https://play-lh.googleusercontent.com/AeRqd5RO1fEGgwxjOYzvK2Guv6kLd4BWAGFpQxVOhvV81tFmrPuRT59ke4FZvofDTZo=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">บ้านของเล่นเพื่อครอบครัว</div><br>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.iz.kids.coloring.book.pages"><img
+                        src="https://play-lh.googleusercontent.com/sW7Bd86WRCBsbnmiU3Z1QXMXvsV0934d2pajgXs2E1OeInpfaTtb1XL9sVi8aFlI1vo=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">ระบายสีหน้าสำหรับเด็กเกมส์</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.bubadu.bubbuschool"><img
+                        src="https://play-lh.googleusercontent.com/WMtprh6jgr4cxNxsYg2jdasU6EKvkue-p3QL2z1hTcNevszcfC_mILZwX1N22xa-l_w=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">Bubbu School – สัตว์น่ารักของฉัน</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.sinyee.babybus.dentistII"><img
+                        src="https://play-lh.googleusercontent.com/OfF1pGgZROFCRQ8-6-5HbTVia3pgkZ6VtNVIBDWv8rA3b_NumSA89CoQrneanCHaVQM=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">เบบี้แพนด้า: การดูแลทันตกรรม</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.iz.kids.happy.birthday.party.game.baby.celebration"><img
+                        src="https://play-lh.googleusercontent.com/h9W0qJqosvZ5yQkFOSAN9AIQMcHzcy2pMFeGD9KCNzNc27joKTLBg16vRRYgDDBIaVvt=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">เกมปาร์ตี้วันเกิดสำหรับเด็ก</div><br>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.sinyee.babybus.taxi"><img
+                        src="https://play-lh.googleusercontent.com/I9ZZ_ZxEbLCohk6yJTFC2G0kDLLyjkclfwE2XsA-US9vfZLMl5jgyMSzHYSVfccqI3M=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">รถโรงเรียนของแพนด้าน้อย</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=bubble.pop.games.shooter.ball.game"><img
+                        src="https://play-lh.googleusercontent.com/a5vkDgBDlx6YvhswjgfhsmSBvxiNGDis_XEeHEgjoAgmpUr2-hOpsTx5Yy-N9C69UFc=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">Bubble Pop: เกมยิง & เกมลูกบอล</div>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.rvappstudios.math.kids.counting"> <img
+                        src="https://play-lh.googleusercontent.com/cU8ydC3SqEcUQUD8e5cnk-DiFEwgsE6NgvEns1L6bg9nROhJG5y2CTEstsBSDdU5Mg0=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">เกมคณิตศาสตร์สำหรับเด็ก</div><br>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+            <div class="app-card">
+                <a href="https://play.google.com/store/apps/details?id=com.sinyee.babybus.dress"> <img
+                        src="https://play-lh.googleusercontent.com/MwJbvRbkVe3Gosj0pkaEZ6Xy4m4azk8HeqNmiPZg9UVOb6gLTAVQ1fvUTWLjpl6YIg=s256-rw"
+                        alt="Free Fire" class="app-icon">
+                </a>
+                <div class="app-name">แพนด้าน้อย: แต่งตัวตุ๊กตา</div><br>
+                <div class="app-rating">4.3 ★</div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>
